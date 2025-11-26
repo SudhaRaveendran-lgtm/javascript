@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            document.write("clicked");
+         }
+         disp=()=>
+         {
+            document.write("<br>arrow function onclicked");
+
+         }
+         dis1=()=>
+         {
+            document.write("<h2>double clicked</h2>");
+         }
+         myadd=(a,b,c)=>
+         {
+            document.write("<h1>total:"+(a+b+c)+"</h1>")
+         }
+         test1=()=>
+         {
+            console.log("cursor inside");
+            document.getElementById("t1").style.backgroundColor="pink";
+         }
+         test2=()=>
+         {
+            console.log("cursor outside");
+            document.getElementById("t1").style.backgroundColor="green";
+         }
+    </script>
+</head>
+<body>
+    <button onclick="show()">clickme</button>
+    <button onclick="disp()">clickme</button>
+    <button ondblclick="dis1()">double click</button>
+    <button onclick="myadd(10,20,40)">find total</button>
+    <br>
+    <input type="text" id="t1" onfocus="test1()" onblur="test2()">
+
+    
+    
+</body>
+</html>                                                                 

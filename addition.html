@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        dis=()=>
+        {
+            var n1=document.getElementById("t1").value;
+            var n2=document.getElementById("t2").value;
+            var tot=parseInt(n1*n1)+parseInt(n2*n2)-parseInt(2*n1*n2);
+        //    document.getElementById("res").innerHTML=`${n1}<sup>2</sup>+${n2}<sup>2</sup>`;
+            // document.getElementById("res").innerHTML=`(${n1}<${n2})${tot}`;
+           //document.getElementById("res").innerHTML=`(${n1}<sup>2</sup>+${n2}<sup>2</sup>)=${tot}`;
+           //document.getElementById("res").innerHTML=`(${n1}<sup>${n2}</sup>)=${tot}`;
+           document.getElementById("res").innerHTML=`(${n1}<sup>2</sup>+${n2}<sup>2</sup>-${2*n1*n2})=${tot}`;
+        }
+        show=()=>{
+            document.getElementById("res").innerHTML="Wait Pannu da...";
+        }
+        show1=()=>
+        {
+            document.getElementById("res").innerHTML="";
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeydown="show()" onkeyup="show()" id="t1" placeholder="Enter no.1"><br>
+    <!-- <input type="text" id="t1" placeholder="Enter num 1"><br> -->
+    <input type="text" id="t2" placeholder="Enter num 2"><br>
+    <button onclick="dis()">Find Total</button>
+    <div id="res"></div>
+</body>
+</html>
