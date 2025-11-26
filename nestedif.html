@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        findres=()=>
+    {
+        var m1=parseFloat(document.getElementById("mark1").value);
+        var m2=parseFloat(document.getElementById("mark2").value);
+        var m3=parseFloat(document.getElementById("mark3").value);
+        var m4=parseFloat(document.getElementById("mark4").value);
+        var m5=parseFloat(document.getElementById("mark5").value);
+        var tot=m1+m2+m3+m4+m5;
+        var avg=tot/5.0;
+        var res="";
+        var gra="";
+        if(m1>34 && m2>34 && m3>34 && m4>34 && m5>34)
+    {
+        res="pass";
+    }
+    else{
+        res="fail"
+    }
+    if(res==="pass")
+    {
+        if(avg>=85)
+       {
+        gra="outstanding";
+       }
+      else if(avg>=75)
+    {
+        gra="Excellent";
+    }
+    else if(avg>=65)
+    {
+        gra="very Good";
+    }
+    else if(avg>=55)
+    {
+        gra="good"
+    }
+    else
+    {
+        gra="********";
+    }
+    document.getElementById("ans1").innerHTML="Total:"+tot;
+    document.getElementById("ans2").innerHTML="Average:"+avg;
+    document.getElementById("ans3").innerHTML="result:"+res;
+    document.getElementById("ans4").innerHTML="grade:"+gra;
+    }
+    }
+    
+    </script>
+</head>
+<body>
+    <input type="text" id="mark1" placeholder="Entermark1"><br>
+     <input type="text" id="mark2" placeholder="Entermark2"><br>
+      <input type="text" id="mark3" placeholder="Entermark3"><br>
+       <input type="text" id="mark4" placeholder="Entermark4"><br>
+        <input type="text" id="mark5" placeholder="Entermark5"><br>
+        <input type="button" onclick="findres()" value="find tot avg res grade">
+        <div id="ans1"></div>
+        <div id="ans2"></div>
+        <div id="ans3"></div>
+        <div id="ans4"></div>
+    
+</body>
+</html>
