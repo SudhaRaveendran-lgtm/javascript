@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        findres=()=>
+    {
+        var m1=parseInt(document.getElementById("t1").value);
+    if(m1 %2 == 0)
+    {
+        document.getElementById("ans").innerHTML=`<h1>${m1} Even number</h1>`;
+    }
+
+    else
+    {
+        document.getElementById("ans").innerHTML=`<h1>${m1} Oddnumber</h1>`;
+    }
+    }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="Enter no">
+    <br>
+    <input type="button" onclick="findres()" value="result">
+    <div id="ans"></div>
+    
+</body>
+</html>
