@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function show()
+        {
+            
+            // for(var i=1;i<=100;i++)
+            // for(var i=100; i>=1; i--)
+        
+            //  console.log("sudha:"+i);
+            //  document.write("<br>raveendran:"+i);
+            var n1=parseInt(document.getElementById("t1").value);
+             var n2=parseInt(document.getElementById("t2").value);
+            //  for(var i=n1;i<=n2;i++)
+             {
+                if(i%2==0)
+                // document.write(i+" <br> ");
+            document.write(`<br><font color='green'>${i}</font>`);
+            else
+            document.write(`<br><font color='red'>${i}</font>`);
+             
+
+        }
+    }
+        // show=()=>{
+
+        // }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="Enter start number">
+    <input type="text" id="t2" placeholder="Enter end number">
+<br>
+    <button onclick="show()">clickme</button>
+    
+</body>
+</html>
