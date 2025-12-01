@@ -16,13 +16,25 @@ i++;
         else{
             i=0;
         }
+
         document.getElementById("imgid").src="./images/"+imgarr[i];
+        document.getElementById("imgname").innerHTML="./images"+imgarr[i];
         setTimeout(show,250);
         }
     </script>
+    <style type="text/css">
+        div{
+            display:flex;
+            align-items: center;
+        }
+    </style>
 </head>
 <body onload="show()">
-    <img id="imgid" src="./images/img3.jfif " width="500" height="300">
+    <div>
+        <img id="imgid" src="" width="500" height="300">
+        <span id="imgname"></span>
+        </div>
+    <!-- <img id="imgid" src="./images/img3.jfif " width="500" height="300"> -->
     <!-- <button onclick="show()">Next image</button>     -->
 </body>
 </html>
