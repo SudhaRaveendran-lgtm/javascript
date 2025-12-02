@@ -19,10 +19,11 @@
          document.getElementById("r8").innerHTML="before trim:"+t.length;
          t=t.trim();
           document.getElementById("r9").innerHTML="after trim:"+t.length;
-        
-        
-
-    }
+          document.getElementById("r10").innerHTML="startswith:"+t.startsWith("shar");
+          document.getElementById("r11").innerHTML="endswith:"+t.endsWith("vin");
+          document.getElementById("r12").innerHTML="replace:"+t.replace("a","o");
+          document.getElementById("r13").innerHTML="replaceall:"+t.replaceAll("a","o");
+         }
     </script>
 </head>
 <body>
@@ -37,6 +38,10 @@
      <div id="r7"></div>
       <div id="r8"></div>
        <div id="r9"></div>
+       <div id="r10"></div>
+       <div id="r11"></div>
+        <div id="r12"></div>
+         <div id="r13"></div>
     
     
 </body>
