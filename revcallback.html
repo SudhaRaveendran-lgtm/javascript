@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       sudha=()=>{
+                alert("This is alert message");
+       }
+       sharvin=()=>{
+                alert("This is alert message1");
+       }
+        function show()
+        {
+            document.getElementById("r1").innerHTML="line1";
+             document.getElementById("r2").innerHTML="line2";
+             setTimeout(sudha,1000);
+              document.getElementById("r3").innerHTML="line3";
+              setTimeout(sharvin,5000);
+               document.getElementById("r4").innerHTML="line4";
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+<button onclick="show()">clickme</button>
+<div id="r1"></div>
+<div id="r2"></div>
+<div id="r3"></div>
+<div id="r4"></div>
+</html>
