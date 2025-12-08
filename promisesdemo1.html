@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function sudhapromise(){
+            return new Promise((resolve, reject) => {
+                setTimeout(()=>{
+                    let msg=true;
+                    if(msg===true)
+                    resolve("success message");
+                else 
+                reject("failure message");
+                },4000)
+            });
+        }
+        // promise way1
+        /*
+        sudhapromise().then((data)=>{
+            console.log(data)
+        }).catch((err)=>{
+            console.error(err);
+        })*/
+    async function sudhaasync()
+    {
+        try 
+        {
+            let data=await sudhapromise();
+            console.log(data)
+        }
+        catch(err)
+        {
+            console.error(err)
+        }
+    }
+
+        
+    </script>
+</head>
+<body>
+    <button onclick="sudhaasync()">clickme</button>
+    
+</body>
+</html>
